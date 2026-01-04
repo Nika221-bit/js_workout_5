@@ -52,3 +52,49 @@ function iseven(){
 
 }
 iseven();
+
+//startwitha
+
+function startwitha(str){ 
+    let word = prompt("ჩაწერე სიტყვა ლათინურად");
+
+    if(word.toLowerCase().startsWith("a")){
+        console.log("სიტყვა იწეყება A-ზე")
+    }
+    else{
+        console.log("სიტყვა არ იწყება A-ზე")
+    }
+}
+startwitha()
+
+//max
+let arr = [12,43,53,70,86,80,43,68,]
+const max = arr.reduce(maxnum)
+
+function maxnum(accumulator,element){
+   return Math.max(accumulator,element)
+  
+
+}
+console.log(max)
+
+//only even
+
+let arr1 = [12, 43, 53, 70, 86, 80, 43, 68];
+
+function getEvenNumbers(array) {
+  return array.filter(num => num % 2 === 0);
+}
+
+let evennums = getEvenNumbers(arr1);
+console.log(evennums); 
+
+//add
+
+let arr3 = [10,20,30,40,50]
+let sum = arr3.reduce(add,0)
+function add(accumulator,element){
+    return accumulator + element
+
+}
+console.log(sum)
