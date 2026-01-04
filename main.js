@@ -98,3 +98,13 @@ function add(accumulator,element){
 
 }
 console.log(sum)
+
+//name age 
+
+function info(){
+    let name = prompt("შეიყვანეთ თქვენი სახელი")
+    let age = prompt("შეიყვანეთ თქვენი ასაკი")
+    
+    console.log(`${name} არის ${age} წლის`)
+}
+info()
